@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Каталог товаров интернет-магазина ТЕХНОМАРТ</title>
 </head>
@@ -22,7 +24,7 @@
                 </form>
 
                 <a class="user-navigation__bookmarks" href="#">Закладки: <span class="bookmarks-number">0</span></a>
-                <a class="user-navigation__basket" href="#">Корзина: <span class="basket-number">0</span></a>
+                <a class="user-navigation__basket" href="#">Корзина: <span class="basket-number">10</span></a>
                 <a class="user-navigation__order" href="#">Оформить заказ</a>
                 
             </div>
@@ -39,12 +41,35 @@
                     <a class="header-description__number" href="#">+7 (812) 555-05-55</a>
                     <p class="header-description__text">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
                 </div>
-    
+                
                 <div class="header__login-registration">
-                    <a class="header__login" href="#">Войти</a>
-                    <a class="header__registration" href="#">Регистрация</a>
+
+                    <div class="header__logout" hidden>
+                        <a class="header__login" href="#">Войти</a>
+                        <a class="header__registration" href="#">Регистрация</a>
+                    </div>
+
+                    <div class="header__login">
+                        <div class="login__main">
+                            <button class="login__button-profile"></button>
+                            <p class="login-name">Равшан Джамшутович</p>
+                            <button class="login__button-logout"></button>
+                        </div>
+                        <div class="login__footer">
+                            <ul class="login__footer-nav">
+                                <li class="footer-nav__item">
+                                    <a class="footer-nav-link" href="#">Мои заказы</a>
+                                </li>
+                                <li class="footer-nav__item">
+                                    <a class="footer-nav-link" href="#">Личный кабинет</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
                 </div>
-    
+                
+
             </section>
     
             <nav class="header__main-navigation">
