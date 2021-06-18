@@ -18,6 +18,10 @@ a {
     margin-right: auto;
 }
 
+.header {
+    background-color: #F3F7F8;
+}
+
 .header__user-navigation {
     padding: 0;
     margin: 0;
@@ -133,7 +137,8 @@ a {
     color: #fff;
 }
 
-.user-navigation__bookmarks::before {
+.user-navigation__bookmarks::before,
+.user-navigation__basket::before {
     content: "";
 
     position: absolute;
@@ -163,20 +168,79 @@ a {
 }
 
 .user-navigation__basket::before {
-    content: "";
-
-    position: absolute;
-
     width: 15px;
     height: 15px;
 
     background-image: url('../img/icon-cart.png');
 }
 
-.
+.user-navigation__order {
+    width: 150px;
+    height: 42px;
 
+    margin: 0;
+    padding: 0;
 
+    text-align: center;
 
+    font-family: 'Cuprum';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 42px;
+    background-color: #63A63E;
+    color: #fff;
+}
 
+.user-navigation__order:hover {
+    background-color: #5FBB2D;
+}
 
+.user-navigation__order:active {
+    color: rgba(255, 255, 255, 0.5);
+}
 
+.header-description__wrapper {
+    display: flex;
+}
+
+.header-description__title {
+    width: 197px;
+
+    margin-left: 30px;
+    margin-top: 37px;
+
+    font-family: 'Cuprum';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: #EE3643;
+}
+
+.header-description__contacts {
+    margin: 0;
+    margin-top: 52px;
+    margin-left: 93px;
+    padding: 0;
+}
+
+.header-description__number {
+    display: block;
+    box-sizing: border-box;
+
+    width: 270px;
+    height: 45px;
+
+    margin: 0;
+    padding: 0;
+
+    border: 3px solid #fff;
+
+    text-align: center;
+    font-family: "Cuprum";
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 45px;
+    color: #EE3643;
+    background-color: transparent;
+}
