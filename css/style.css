@@ -219,12 +219,14 @@ a {
 
 .header-description__contacts {
     margin: 0;
-    margin-top: 52px;
+    margin-top: 41px;
     margin-left: 93px;
     padding: 0;
 }
 
 .header-description__number {
+    position: relative;
+
     display: block;
     box-sizing: border-box;
 
@@ -233,6 +235,7 @@ a {
 
     margin: 0;
     padding: 0;
+    padding-left: 25px;
 
     border: 3px solid #fff;
 
@@ -240,7 +243,105 @@ a {
     font-family: "Cuprum";
     font-weight: 700;
     font-size: 21px;
-    line-height: 45px;
+    line-height: 40px;
     color: #EE3643;
     background-color: transparent;
 }
+
+.header-description__number::before {
+    content: "";
+
+    position: absolute;
+    top: 10px;
+    left: 35px;
+
+    width: 19px;
+    height: 19px;
+    background-image: url('../img/icon-phone.png');
+}
+
+.header-description__text {
+    margin: 0;
+    margin-left: 10px;
+    padding: 0;
+
+    font-family: 'Cuprum';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #32425C;
+}
+
+.header__login-registration {
+    margin: 0;
+    margin-top: 41px;
+    margin-left: 69px;
+    padding: 0;
+}
+
+.header__login,
+.header__registration {
+    display: inline-block;
+    box-sizing: border-box;
+
+    position: relative;
+
+    width: 121px;
+    height: 45px;
+
+    margin: 0;
+    padding: 0;
+    padding-left: 15px;
+
+    background-color: #fff;
+
+    font-family: 'Cuprum';
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 45px;
+    text-align: center;
+    color: #000;
+}
+
+.header__registration {
+    width: 150px;
+    padding: 0;
+    margin-left: 6px;
+}
+
+.header__login:hover,
+.header__registration:hover {
+    color: #EE3643;
+}
+
+.header__login:active,
+.header__registration:active {
+    color: #C5C5C5;
+}
+
+.header__login::before {
+    content: '';
+
+    position: absolute;
+    top: 14px;
+    left: 20px;
+
+    width: 19px;
+    height: 17px;
+
+    background-image: url('../img/icon-login.png');
+    opacity: .3;
+}
+
+.header__login:hover::before {
+    opacity: 1;
+}
+
+.header__login:active::before {
+    opacity: .3;
+}
+
+.login__name {
+    
+}
+
