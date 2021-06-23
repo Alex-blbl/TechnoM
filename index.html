@@ -54,24 +54,23 @@
         
                     <div class="header__login-registration">
 
-                        <div class="header__user-logout" hidden>
+                        <div class="header__user-logout">
                             <a class="header__login" href="#">Войти</a>
                             <a class="header__registration" href="#">Регистрация</a>
                         </div>
     
-                        <div class="header__user-login">
+                        <div class="header__user-login" hidden>
                             <div class="login__main">
-                                <a class="login__button-profile"></a>
-                                <p class="login-name">Равшан Джамшутович</p>
-                                <a class="login__button-logout"></a>
+                                <a class="login__name" href="#">Равшан Джамшутович</a>
+                                <a class="login__button-logout" href="#"></a>
                             </div>
                             <div class="login__footer">
                                 <ul class="login__footer-nav">
                                     <li class="footer-nav__item">
-                                        <a class="footer-nav-link" href="#">Мои заказы</a>
+                                        <a class="footer-nav__link" href="#">Мои заказы</a>
                                     </li>
                                     <li class="footer-nav__item">
-                                        <a class="footer-nav-link" href="#">Личный кабинет</a>
+                                        <a class="footer-nav__link" href="#">Личный кабинет</a>
                                     </li>
                                 </ul>
                             </div>
@@ -121,45 +120,50 @@
 
             <section class="main__offer">
 
-                <ul class="ofer__list">
-                    <li class="ofer__item">
-                        <p class="ofer__text">Материалы</p>
+                <ul class="offer__list">
+                    <li class="offer__item orange new-item">
+                        <p class="offer__text">Материалы</p>
                         <a class="offer__link" href="#">На любой вкус</a>
                         <img class="offer__img" src="img/offer__materials.png" alt="" width="44" height="65">
                     </li>
-                    <li class="ofer__item">
-                        <p class="ofer__text">Инструменты</p>
+                    <li class="offer__item blue">
+                        <p class="offer__text">Инструмент</p>
                         <a class="offer__link" href="#">На все случаи</a>
                         <img class="offer__img" src="img/offer__tools.png" alt="" width="75" height="61">
                     </li>
-                    <li class="ofer__item">
-                        <p class="ofer__text">Техника</p>
+                    <li class="offer__item purple">
+                        <p class="offer__text">Техника</p>
                         <a class="offer__link" href="#">Для стройки</a>
                         <img class="offer__img" src="img/offer__technic.png" alt="" width="78" height="62">
                     </li>
-                    <li class="offer__slider">
-                        <div class="offer__header-perforator">
+                    <li class="offer__slider offer__slider-perforator">
+                        <div class="offer__header-perforator" hidden>
                             <h3 class="offer__title">Перфораторы</h3>
                             <p class="offer__header-text">Настоящие мужские игрушки</p>
                         </div>
-                        <div class="offer__header-perforator hidden">
+                        <div class="offer__header-drill" >
                             <h3 class="offer__title">Дрели</h3>
                             <p class="offer__header-text">Соседям на радость!</p>
                         </div>
                         <div class="offer__slider-buttons">
                             <button class="offer__button-left"></button>
-                            <button class="offer__button-rigth"></button>
+                            <button class="offer__button-right"></button>
                         </div>
-                        <a class="offer__slider-link" href="">Открыть каталог</a>
+                        <div class="offer__slider-footer">
+                            <a class="offer__slider-link" href="">Открыть каталог</a>
+                            <button class="offer__slider-mark offer__slider-active"></button>
+                            <button class="offer__slider-mark"></button>
+                        </div>
+                        
                     </li>
-                    <li class="ofer__item">
-                        <p class="ofer__text">Скидка 50%</p>
+                    <li class="offer__item green">
+                        <p class="offer__text">Скидка 50%</p>
                         <a class="offer__link" href="#">на 350 товаров</a>
                         <img class="offer__img" src="img/offer__basket-shop.png" alt="" width="59" height="72">
                     </li>
-                    <li class="ofer__item">
-                        <p class="ofer__text">Доставка</p>
-                        <a class="offer__link" href="#">Бесплатно/a>
+                    <li class="offer__item orange">
+                        <p class="offer__text">Доставка</p>
+                        <a class="offer__link" href="#">Бесплатно</a>
                         <img class="offer__img" src="img/offer__car.png" alt="" width="78" height="63">
                     </li>
                 </ul>
